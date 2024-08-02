@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/testovoe_api_fox/static/css/main.28c895d2.css",
+    "main.css": "/testovoe_api_fox/static/css/main.bb05299e.css",
     "main.js": "/testovoe_api_fox/static/js/main.365a7966.js",
     "index.html": "/testovoe_api_fox/index.html",
-    "main.28c895d2.css.map": "/testovoe_api_fox/static/css/main.28c895d2.css.map",
+    "main.bb05299e.css.map": "/testovoe_api_fox/static/css/main.bb05299e.css.map",
     "main.365a7966.js.map": "/testovoe_api_fox/static/js/main.365a7966.js.map"
   },
   "entrypoints": [
-    "static/css/main.28c895d2.css",
+    "static/css/main.bb05299e.css",
     "static/js/main.365a7966.js"
   ]
 }
