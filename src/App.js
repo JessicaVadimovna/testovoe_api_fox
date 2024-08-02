@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './App.css'; // Импортируем стили для приложения
+import CardList from './components/CardList'; // Импортируем компонент списка карточек
+import FilterButton from './components/FilterButton'; // Импортируем компонент кнопки фильтра
 
+// Главный компонент приложения
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Фотогалерея лисичек</h1> 
+      <FilterButton /> 
+      <CardList /> 
     </div>
   );
 }

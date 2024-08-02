@@ -1,38 +1,112 @@
+:root {
+  --rust-orange: #D06224;    /* Насыщенный оранжево-красный, как мех лисы */
+  --forest-green: #2C5530;   /* Глубокий зеленый, как лес */
+  --cool-gray: #A4B8C4;      /* Прохладный серый для нейтральности */
+  --soft-beige: #F2E8DC;     /* Мягкий бежевый для фона */
+  --deep-brown: #432818;     /* Глубокий коричневый для акцентов */
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--soft-beige);
+  color: var(--deep-brown);
+  margin: 0;
+  padding: 0;
+}
+
 .App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  color: var(--rust-orange);
   text-align: center;
+  margin-bottom: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.filter-button {
+  display: block;
+  margin: 0 auto 20px;
+  padding: 10px 20px;
+  background-color: var(--forest-green);
+  color: var(--soft-beige);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.filter-button:hover {
+  background-color: var(--rust-orange);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: var(--cool-gray);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(67, 40, 24, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card p {
+  margin: 0 0 15px;
+  color: var(--deep-brown);
+}
+
+.card-buttons {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.card-button {
+  background-color: var(--forest-green);
+  color: var(--soft-beige);
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-button:hover {
+  background-color: var(--rust-orange);
+}
+
+.like-button {
+  color: var(--soft-beige);
+}
+
+.like-button.liked {
+  background-color: var(--rust-orange);
+}
+
+.remove-button {
+  color: var(--soft-beige);
+}
+
+.remove-button:hover {
+  background-color: #8B0000; /* Темно-красный для кнопки удаления при наведении */
 }
