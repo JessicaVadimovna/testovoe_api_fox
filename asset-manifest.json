@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/testovoe_api_fox/static/css/main.bb05299e.css",
+    "main.css": "/testovoe_api_fox/static/css/main.65f583c7.css",
     "main.js": "/testovoe_api_fox/static/js/main.365a7966.js",
+    "static/media/replicate-prediction-xdmf7h3f5drm40ch340vaa2qw0.webp": "/testovoe_api_fox/static/media/replicate-prediction-xdmf7h3f5drm40ch340vaa2qw0.7e99581b23511d4defb3.webp",
     "index.html": "/testovoe_api_fox/index.html",
-    "main.bb05299e.css.map": "/testovoe_api_fox/static/css/main.bb05299e.css.map",
+    "main.65f583c7.css.map": "/testovoe_api_fox/static/css/main.65f583c7.css.map",
     "main.365a7966.js.map": "/testovoe_api_fox/static/js/main.365a7966.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb05299e.css",
+    "static/css/main.65f583c7.css",
     "static/js/main.365a7966.js"
   ]
 }
