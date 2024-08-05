@@ -1,10 +1,10 @@
 :root {
-  --rust-orange: #D06224;    /* Насыщенный оранжево-красный, как мех лисы */
-  --forest-green: #2C5530;   /* Глубокий зеленый, как лес */
-  --cool-gray: #A4B8C4;      /* Прохладный серый для нейтральности */
-  --soft-beige: #F2E8DC;     /* Мягкий бежевый для фона */
-  --deep-brown: #432818;     /* Глубокий коричневый для акцентов */
-  --cosmo-black: #0e0d0d;       /* Глубокий космический черный*/
+  --rust-orange: #D06224;    
+  --forest-green: #2C5530;   
+  --cool-gray: #A4B8C4;  
+  --soft-beige: #F2E8DC;     
+  --deep-brown: #432818;     
+  --cosmo-black: #0e0d0d;       
 }
 
 body {
@@ -13,6 +13,9 @@ body {
   color: var(--deep-brown);
   margin: 0;
   padding: 0;
+  background-image: url(/replicate-prediction-xdmf7h3f5drm40ch340vaa2qw0.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .App {
@@ -56,6 +59,10 @@ h1 {
   box-shadow: 0 4px 6px rgba(67, 40, 24, 0.1);
   overflow: hidden;
   transition: transform 0.3s;
+  background: rgba(255,255,255,0.45);
+  -webkit-backdrop-filter: blur(11px);
+  backdrop-filter: blur(11px);
+  border: 1px solid rgba(255,255,255,0.225);
 }
 
 .card:hover {
